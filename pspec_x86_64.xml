@@ -30,12 +30,15 @@
         <Description xml:lang="en">python3-sip is a tool that creates python3 bindings for C and C++ libraries.
 </Description>
         <PartOf>programming.python</PartOf>
+        <RuntimeDependencies>
+            <Dependency>python-sip</Dependency>
+        </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/python3.4</Path>
         </Files>
     </Package>
     <History>
-        <Update release="1">
+        <Update release="2">
             <Date>2015-09-14</Date>
             <Version>4.16.9</Version>
             <Comment>Packaging update</Comment>
