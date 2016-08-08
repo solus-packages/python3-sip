@@ -1,9 +1,10 @@
 name       : python3-sip
-version    : 4.16.9
-release    : 3
+version    : 4.18.1
+release    : 4
 source     :
-    - http://downloads.sourceforge.net/project/pyqt/sip/sip-4.16.9/sip-4.16.9.tar.gz : dbe173aa566e26ca0bb5bcbc1d30ef780f416267bb3b5df48149a737ea6b0555
+    - http://freefr.dl.sourceforge.net/project/pyqt/sip/sip-4.18.1/sip-4.18.1.tar.gz : 9bce7a2dbf7f105bf68ad1bab58eebc0ce33087ec40396da756463f086ffa290
 license    : GPL-3.0
+component  : programming.python
 summary    : python3-sip is a tool that creates python3 bindings for C and C++ libraries.
 description: |
     python3-sip is a tool that creates python3 bindings for C and C++ libraries.
