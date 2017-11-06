@@ -1,13 +1,16 @@
 name       : python3-sip
-version    : 4.19.2
-release    : 7
+version    : 4.19.5
+release    : 9
 source     :
-    - https://sourceforge.net/projects/pyqt/files/sip/sip-4.19.2/sip-4.19.2.tar.gz : 432b4aad25254e6997913e33b1ca3cf5fd21d5729a50a3ce2edccbea82c80533
+    - https://netcologne.dl.sourceforge.net/project/pyqt/sip/sip-4.19.5/sip-4.19.5.tar.gz : 391b7bf08f1cd12d8a25ed5608ca36ee9b759eee1690d8156e35d92f9a74b456
 license    : GPL-3.0
 component  : programming.python
-summary    : python3-sip is a tool that creates python3 bindings for C and C++ libraries.
+summary    : python3-sip is a tool that creates python3 bindings for C and C++ libraries
 description: |
-    python3-sip is a tool that creates python3 bindings for C and C++ libraries.
+    SIP is a tool for generating bindings for C++ classes so that they can be
+    accessed as normal Python classes. SIP takes many of its ideas from SWIG but,
+    because it is specifically designed for C++ and Python, is able to generate
+    tighter bindings. SIP is so called because it is a small SWIG.
 builddeps  :
     - pkgconfig(python-3.5)
     - python-sip
@@ -15,7 +18,7 @@ rundeps    :
     - python-sip
 setup      : |
     sed -i "s|sip_bin_dir, \"sip\"|sip_bin_dir, \"sip3\"|" configure.py
-    python3 configure.py CFLAGS="${CFLAGS}"
+    python3 configure.py CFLAGS="$CFLAGS" CXXFLAGS="$CXXFLAGS" LFLAGS="$LDFLAGS"
 build      : |
     %make
 install    : |
