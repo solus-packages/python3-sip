@@ -1,6 +1,6 @@
 name       : python3-sip
 version    : 4.19.5
-release    : 9
+release    : 10
 source     :
     - https://netcologne.dl.sourceforge.net/project/pyqt/sip/sip-4.19.5/sip-4.19.5.tar.gz : 391b7bf08f1cd12d8a25ed5608ca36ee9b759eee1690d8156e35d92f9a74b456
 license    : GPL-3.0
